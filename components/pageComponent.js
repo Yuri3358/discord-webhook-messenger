@@ -10,6 +10,7 @@ const pageComponent = {
     methods: {
         sendMessage() {
             fetch(`https://discord.com/api/webhooks/${this.channelId}/${this.apiToken}`, {
+                method: "POST",
                 headers: {
                     "Content-type": "application/json"
                 },
