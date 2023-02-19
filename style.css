@@ -1,6 +1,38 @@
+body {
+    background-color: rgb(1, 45, 128);
+}
+
+header {
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}
+
 #content-box {
+    margin: auto;
     background-color: darkgreen;
-    width: 20cm;
+    width: 10cm;
     text-align: center;
     color: white;
+    border-radius: 2px;
+    border: ridge 2px black;
+    box-shadow: rgba(0, 0, 0, 0.319) 3px 3px 1px;
+    resize: none;
+}
+
+.btn {
+    border-color: black;
+}
+
+label {
+    font-size: 20px;
+}
+
+input, textarea {
+    color: black;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 6px;
 }
