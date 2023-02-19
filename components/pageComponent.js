@@ -17,7 +17,7 @@ const pageComponent = {
                 body: JSON.stringify({
                     content: this.message
                 })
-            })
+            }).then(this.message = "")
         }
     }
 }
