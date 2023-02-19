@@ -11,7 +11,7 @@ header {
 #content-box {
     margin: auto;
     background-color: darkgreen;
-    width: 10cm;
+    width: 14cm;
     text-align: center;
     color: white;
     border-radius: 2px;
@@ -22,10 +22,26 @@ header {
 
 .btn {
     border-color: black;
+    margin-bottom: 10px;
 }
 
 label {
     font-size: 20px;
+} 
+
+#token {
+    font-size: 16px;
+    width: 10cm;
+}
+
+#channel {
+    font-size: 18px;
+}
+
+#message {
+    resize: none;
+    font-size: 16px;
+    width: 10cm;
 }
 
 input, textarea {
@@ -33,6 +49,6 @@ input, textarea {
     display: flex;
     text-align: center;
     margin: auto;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 6px;
 }
