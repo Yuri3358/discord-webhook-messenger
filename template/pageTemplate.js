@@ -2,7 +2,7 @@ const pageTemplate = `
     <header>
         <h1>Discord Webhook Messenger</h1>
     </header>
-    <div id="content-box">
+    <div id="content-box" @keyup.enter="sendMessage">
         <label for="token">Token da API</label>
         <input id="token" autocomplete=off v-model="apiToken">
 
