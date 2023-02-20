@@ -14,7 +14,6 @@ header {
     margin: auto;
     resize: none;
     width: 14cm;
-    height: 7cm;
     text-align: center;
     color: white;
     border-radius: 2px;
@@ -34,7 +33,7 @@ header {
 
 .btn {
     border-color: black;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 label {
@@ -47,11 +46,16 @@ input, textarea {
     text-align: center;
     margin: auto;
     margin-bottom: 6px;
+    border-radius: 4px;
 }
 
 #url {
     font-size: 16px;
     width: 12cm;
+}
+
+.form-check-input {
+    font-size: 20px;
 }
 
 #message {
@@ -60,6 +64,7 @@ input, textarea {
     width: 10cm;
     height: 3cm;
 }
+
 
 @media (max-width: 700px) {
     #header {

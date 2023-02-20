@@ -3,7 +3,9 @@ const pageComponent = {
     data() {
         return {
             webhookURL: "",
-            message: ""
+            message: "",
+            showEmbed: false,
+            embedTitle: "",
         }
     },
     methods: {
@@ -13,10 +15,20 @@ const pageComponent = {
                 headers: {
                     "Content-type": "application/json"
                 },
-                body: JSON.stringify({
-                    content: this.message
-                })
-            }).then(this.message = "")
+                body: JSON.stringify(this.useEmbed())
+            }).then(this.message = this.embedTitle = "")
+        },
+        useEmbed() {
+            if (this.showEmbed) {
+                return {
+                    embeds: [{
+                        title: this.embedTitle,
+                        description: this.message,
+                    }]
+                }
+            } else {
+                return {content: this.message}
+            }
         }
     }
 }
