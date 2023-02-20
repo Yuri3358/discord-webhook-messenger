@@ -1,6 +1,7 @@
 const pageTemplate = `
     <header>
         <h1>Discord Webhook Messenger</h1>
+        <a target="_blank" href="https://github.com/Yuri3358" id="creatormark">Made by Yuri</a>  
     </header>
     <div id="content-box" @keyup.enter="sendMessage">
         <label for="token">Token da API</label>
