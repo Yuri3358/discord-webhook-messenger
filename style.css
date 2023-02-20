@@ -8,6 +8,20 @@ header {
     color: white;
 }
 
+
+#content-box {
+    background-color: darkgreen;
+    margin: auto;
+    resize: none;
+    width: 14cm;
+    height: 7cm;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    border: ridge 2px black;
+    box-shadow: rgba(0, 0, 0, 0.319) 3px 3px 1px;
+}
+
 #creatormark {
     position: relative;
     text-decoration: none;
@@ -16,18 +30,6 @@ header {
     bottom: 1.2cm;
     right: 10px;
     font-size: 20px
-}
-
-#content-box {
-    background-color: darkgreen;
-    margin: auto;
-    resize: none;
-    width: 14cm;
-    text-align: center;
-    color: white;
-    border-radius: 2px;
-    border: ridge 2px black;
-    box-shadow: rgba(0, 0, 0, 0.319) 3px 3px 1px;
 }
 
 .btn {
@@ -57,4 +59,5 @@ input, textarea {
     resize: none;
     font-size: 16px;
     width: 10cm;
+    height: 3cm;
 }
