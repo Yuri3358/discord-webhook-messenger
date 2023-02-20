@@ -19,15 +19,15 @@ header {
 }
 
 #content-box {
-    margin: auto;
     background-color: darkgreen;
+    margin: auto;
+    resize: none;
     width: 14cm;
     text-align: center;
     color: white;
     border-radius: 2px;
     border: ridge 2px black;
     box-shadow: rgba(0, 0, 0, 0.319) 3px 3px 1px;
-    resize: none;
 }
 
 .btn {
@@ -48,13 +48,9 @@ input, textarea {
     margin-bottom: 6px;
 }
 
-#token {
-    font-size: 16px;
-    width: 10cm;
-}
-
-#channel {
-    font-size: 18px;
+#url {
+    font-size: 14px;
+    width: 12cm;
 }
 
 #message {

@@ -2,14 +2,13 @@ const pageComponent = {
     template: pageTemplate,
     data() {
         return {
-            apiToken: "",
-            channelId: "",
+            webhookURL: "",
             message: ""
         }
     },
     methods: {
         sendMessage() {
-            fetch(`https://discord.com/api/webhooks/${this.channelId}/${this.apiToken}`, {
+            fetch(this.webhookURL, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"

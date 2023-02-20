@@ -4,11 +4,8 @@ const pageTemplate = `
         <a target="_blank" href="https://github.com/Yuri3358" id="creatormark">Made by Yuri</a>  
     </header>
     <div id="content-box" @keyup.enter="sendMessage">
-        <label for="token">Token da API</label>
-        <input id="token" autocomplete=off v-model="apiToken">
-
-        <label for="channel">ID do Chat</label>
-        <input id="channel" autocomplete=off v-model="channelId">
+        <label for="url">Link da Webhook</label>
+        <input id="url" autocomplete=off v-model="webhookURL">
 
         <label for="message">Mensagem</label>
         <textarea id="message" autocomplete=off v-model="message"></textarea>
