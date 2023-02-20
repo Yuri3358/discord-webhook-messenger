@@ -27,7 +27,7 @@ header {
     text-decoration: none;
     color: wheat;
     float: right;
-    bottom: 1.2cm;
+    bottom: 1.1cm;
     right: 10px;
     font-size: 20px
 }
@@ -38,7 +38,7 @@ header {
 }
 
 label {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 input, textarea {
@@ -46,18 +46,40 @@ input, textarea {
     display: flex;
     text-align: center;
     margin: auto;
-    font-size: 12px;
     margin-bottom: 6px;
 }
 
 #url {
-    font-size: 14px;
+    font-size: 16px;
     width: 12cm;
 }
 
 #message {
     resize: none;
-    font-size: 16px;
+    font-size: 18px;
     width: 10cm;
     height: 3cm;
+}
+
+@media (max-width: 700px) {
+    #header {
+        width: 3cm;
+    }
+    #content-box {
+        width: 7.4cm;
+    }
+    #url {
+        width: 7cm;
+        font-size: 18px;
+    }
+    #message {
+        width: 7cm;
+        font-size: 20px;
+    }
+    #creatormark {
+        float: none;
+        position: relative;
+        bottom: 3px;
+        left: 2px;
+    }
 }
