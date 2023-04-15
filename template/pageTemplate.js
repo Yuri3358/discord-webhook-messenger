@@ -19,6 +19,8 @@ const pageTemplate = `
         <label class="form-check-label" for="form-check-input">Embeds</label>
         <input class="form-check-input" type="checkbox" v-model="this.showEmbed">
 
+        <label class="form-check-label" for="form-check-input">Modo Eval</label>
+        <input class="form-check-input" type="checkbox" v-model="evalExpression">
         <button class="btn btn-success" @click="sendMessage">Enviar Mensagem</button>
     </div>
 `

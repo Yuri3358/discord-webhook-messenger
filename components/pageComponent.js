@@ -6,6 +6,7 @@ const pageComponent = {
             message: "",
             showEmbed: false,
             embedTitle: "",
+            evalExpression: false
         }
     },
     methods: {
@@ -26,6 +27,8 @@ const pageComponent = {
                         description: this.message,
                     }]
                 }
+            } else if (this.evalExpression){
+                return {content: eval(this.message)}
             } else {
                 return {content: this.message}
             }
