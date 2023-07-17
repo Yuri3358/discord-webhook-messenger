@@ -16,11 +16,17 @@ const pageTemplate = `
         <label for="message">Mensagem</label>
         <textarea id="message" autocomplete=off v-model="message"></textarea>
         
-        <label class="form-check-label" for="form-check-input">Embeds</label>
-        <input class="form-check-input" type="checkbox" v-model="this.showEmbed">
-
-        <label class="form-check-label" for="form-check-input">Modo Eval</label>
-        <input class="form-check-input" type="checkbox" v-model="evalExpression">
+        <div id="options">
+            <div class="checks">
+                <label class="form-check-label" for="form-check-input">Embeds</label>
+                <input class="form-check-input" type="checkbox" v-model="this.showEmbed">                        
+            </div>
+            <div class="checks">
+                <label class="form-check-label" for="form-check-input">Modo Eval</label>
+                <input class="form-check-input" type="checkbox" v-model="evalExpression">            
+            </div>
+        </div>
+        <br/>
         <button class="btn btn-success" @click="sendMessage">Enviar Mensagem</button>
     </div>
 `
